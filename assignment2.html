@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>HTML Quiz</title>
+    
+    <style>
+        body{
+            background-color: aliceblue;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1{
+            font-family: 'Franklin Gothic Medium';
+            color:lightblue;
+            text-align: center;
+        }
+        h3{
+            font-family: 'Franklin Gothic Medium';
+            text-align: left;
+            color: lightsalmon;
+        }
+        .container {
+      max-width: 800px;
+      margin: 50px auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      align-items: center; 
+    }
+    .question {
+      margin-bottom: 20px;
+    }
+    p{
+        color: cadetblue;
+        font-size: larger;
+        text-align: center;
+    }
+    .options {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .option {
+      margin-bottom: 10px;
+    }
+    .submit-btn {
+        text-align: center;
+            background-color: lightpink;
+            color: palevioletred;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .submit-btn:hover {
+            color: white;
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1> Animal Quiz </h1>
+    <div class="container">
+        <form id="quizForm">
+            <div class="question">
+                <h3>Q.1 which mammal can swim under water?</h3>
+                <div class="options">
+                    <label class="option"><input type="radio" name="q1" value="dolphin"> Dolphin</label>
+                    <label class="option"><input type="radio" name="q1" value="ocra"> Ocra</label>
+                    <label class="option"><input type="radio" name="q1" value="whale"> Whale</label>      
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>Q.2 what are baby kangaroos called?</h3>
+                <div class="options">
+                    <label class="option"><input type="radio" name="q2" value="joey"> Joeys</label>
+                    <label class="option"><input type="radio" name="q2" value="kids"> Kids</label>
+                    <label class="option"><input type="radio" name="q2" value="puppies"> Puppies</label>      
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>Q.3 What is the largest mammal on Earth?</h3>
+                <div class="options">
+                    <label class="option"><input type="radio" name="q3" value="elephant"> Elephant</label>
+                    <label class="option"><input type="radio" name="q3" value="bluewhale"> Blue Whale</label>
+                    <label class="option"><input type="radio" name="q3" value="giraffe"> Giraffe</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>Q.4 Identify the animal in the image below:</h3>
+                <img src="C:\Users\Maithili\Desktop\Semester 4\AWT\images\cow.jpg" alt="Animal Image" style="max-width: 50%;">
+                <div class="options">
+                    <label class="option"><input type="radio" name="q4" value="lion"> Lion</label>
+                    <label class="option"><input type="radio" name="q4" value="tiger"> Tiger</label>
+                    <label class="option"><input type="radio" name="q4" value="cow"> Cow</label>
+                </div>
+            </div>
+            
+            <div class="question">
+                <h3>Q.5 Identify the animal in the image below:</h3>
+                <img src="C:\Users\Maithili\Desktop\Semester 4\AWT\images\sloth.jpg" alt="Animal Image" style="max-width: 50%;">
+                <div class="options">
+                    <label class="option"><input type="radio" name="q5" value="sloth"> Sloth</label>
+                    <label class="option"><input type="radio" name="q5" value="albino monkey"> Albino monkey</label>
+                    <label class="option"><input type="radio" name="q5" value="seal"> Seal</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>Q.6 Which mammal has the thickest fur?</h3>
+                <div class="options">
+                    <label class="option"><input type="radio" name="q6" value="polar bear"> Polar bear</label>
+                    <label class="option"><input type="radio" name="q6" value="panda"> Panda</label>
+                    <label class="option"><input type="radio" name="q6" value="sea otter"> Sea Otter</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>Q.7 What is the female fox called?</h3>
+                <div class="options">
+                    <label class="option"><input type="radio" name="q7" value="vixen"> Vixen</label>
+                    <label class="option"><input type="radio" name="q7" value="foxy"> Foxy</label>
+                    <label class="option"><input type="radio" name="q7" value="fixen"> Fixen </label>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>Q.8 What is a baby hedgehog called?</h3>
+                <img src="C:\Users\Maithili\Desktop\Semester 4\AWT\images\hedge.jpeg" alt="Animal Image" style="max-width: 50%;">
+                <div class="options">
+                    <label class="option"><input type="radio" name="q8" value="joey"> Joey</label>
+                    <label class="option"><input type="radio" name="q8" value="clupty"> Clupty</label>
+                    <label class="option"><input type="radio" name="q8" value="hoglet"> Hoglet </label>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>Q.9  How many legs does a lobster have?</h3>
+                <div class="options">
+                    <label class="option"><input type="radio" name="q9" value="7"> 7</label>
+                    <label class="option"><input type="radio" name="q9" value="17"> 17</label>
+                    <label class="option"><input type="radio" name="q9" value="10"> 10 </label>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>Q.10  Which sea creature is known for its ability to re-grow its arms?</h3>
+                <div class="options">
+                    <label class="option"><input type="radio" name="q10" value="fish">Fish</label>
+                    <label class="option"><input type="radio" name="q10" value="starfish">StarFish</label>
+                    <label class="option"><input type="radio" name="q10" value="shark"> Shark </label>
+                </div>
+            </div>
+
+            <button type="button" class="submit-btn" onclick="submitQuiz()" >Submit Quiz</button>
+
+            <div id="result" style="display: none;">
+            <p id="score">Total correct answers: <span id="correctAnswers">0</span> out of 10</p>
+            </div>
+
+        </form>
+    </div>
+
+    <script>
+        function submitQuiz() {
+            const form = document.getElementById('quizForm');
+            const result = document.getElementById('result');
+            const correct = document.getElementById('correctAnswers');
+
+            let score = 0;
+
+            var correctAnswers = {
+                q1: 'whale',
+                q2: 'joey',
+                q3: 'bluewhale',
+                q4: 'cow',
+                q5: 'sloth',
+                q6: 'sea otter',
+                q7: 'vixen',
+                q8: 'hoglet',
+                q9: '10',
+                q10: 'starfish'
+            };
+
+            var userAnswers = {};
+            var questions = document.forms['quizForm'].elements;
+
+            for (var i = 0; i < questions.length; i++) {
+                if (questions[i].type === 'radio' && questions[i].checked) {
+                    var questionName = questions[i].name;
+                    var selectedAnswer = questions[i].value;
+                    userAnswers[questionName] = selectedAnswer;
+                }
+            }
+
+            for (var question in correctAnswers) {
+                if (!userAnswers[question]) {
+                    alert('Please select an answer for question ' + question.slice(1) + '.');
+                    return;
+                }
+            }
+
+           
+            for (const question in correctAnswers) {
+                 const selectedOption = form.elements[question].value;
+                 if (selectedOption === correctAnswers[question]) {
+                        score++;
+                    }
+                }
+
+            correct.textContent = score;
+            result.style.display='block';
+
+           
+            }            
+    </script>
+</body>
+</html>
